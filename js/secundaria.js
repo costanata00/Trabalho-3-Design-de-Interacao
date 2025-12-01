@@ -1,6 +1,6 @@
 const url1 = "https://brasilapi.com.br/api/feriados/v1/2025";
-const url2 = "https://meowfacts.herokuapp.com/?id=3";
-const url3 = "http://swapi.dev/api/planets/1/";
+const url2 = "https://catfact.ninja/fact";
+const url3 = "https://swapi.dev/api/planets/1/";
 
 export async function promessas() {
     let texto = document.getElementById("secundaria");
@@ -16,7 +16,7 @@ export async function promessas() {
 
         let promessaAll2 = await promessas[1].text();
         texto.innerHTML += "<h2>API 2 - Fatos sobre gatos</h2>";
-        texto.innerHTML += `<pre>${promessaAll2}</pre><p>Tradução: Mães gatos ensinam seus filhotes a usarem caixas de areia`;
+        texto.innerHTML += `<pre>${promessaAll2}</pre>`;
 
         let promessaAll3 = await promessas[2].text();
         texto.innerHTML += "<h2>API 3 - Informações sobre o planeta Tatooine (Star Wars)</h2>";
